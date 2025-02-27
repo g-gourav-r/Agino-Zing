@@ -30,7 +30,7 @@ export default function UploadPage() {
     formData.append("file", file);
 
     const API_URL =
-      process.env.NEXT_PUBLIC_API_URL || "http://43.204.193.123:8000";
+      process.env.NEXT_PUBLIC_API_URL || "https://zingapi.agino.tech";
 
     try {
       const res = await fetch(`${API_URL}/upload`, {
@@ -68,7 +68,7 @@ export default function UploadPage() {
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 shadow p-4">
         <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
-          Upload File
+          Agino Zing
         </h1>
       </header>
 

@@ -4,7 +4,7 @@ export async function POST(request) {
     const contentType = request.headers.get("content-type") || "";
 
     // Proxy the request to the external chat API, now including the duplex option.
-    const externalRes = await fetch("http://43.204.193.123:8000/chat", {
+    const externalRes = await fetch("https://zingapi.agino.tech/chat", {
       method: "POST",
       headers: {
         "content-type": contentType,
