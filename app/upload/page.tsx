@@ -64,17 +64,22 @@ export default function UploadPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-black">
       {/* Header */}
-      <header className="bg-white dark:bg-gray-800 shadow p-4">
-        <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
-          Agino Zing
+      <header className="bg-black shadow p-4">
+        <h1 className="text-3xl font-bold text-center">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">
+            Agino
+          </span>{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">
+            Zing
+          </span>
         </h1>
       </header>
 
       {/* Upload Container */}
       <div className="flex-grow flex items-center justify-center p-8">
-        <div className="w-full max-w-xl border-2 border-dashed border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-gray-800 p-8">
+        <div className="w-full max-w-xl border-2 border-white rounded-lg bg-black p-8">
           <FileUpload onChange={handleFileChange} />
           <form onSubmit={handleUpload} className="mt-4">
             <Button type="submit" disabled={loading} className="w-full">
